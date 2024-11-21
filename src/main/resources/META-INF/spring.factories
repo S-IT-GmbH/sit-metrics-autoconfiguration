@@ -1,0 +1,5 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  dev.sitconsulting.library.spring.MetricsAutoConfiguration
+
+org.springframework.boot.env.EnvironmentPostProcessor=\
+  dev.sitconsulting.library.spring.MetricsEnvironmentPostProcessor
