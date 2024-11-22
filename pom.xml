@@ -16,7 +16,7 @@
 
     <organization>
         <name>S-IT Application Engineering &amp; Consulting GmbH</name>
-        <url>https://s-it.consulting/</url>
+        <url>https://s-it.consulting</url>
     </organization>
     <inceptionYear>2024</inceptionYear>
     <licenses>
@@ -26,6 +26,9 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
+
+    <description>S-IT Metrics Autoconfiguration</description>
+    <url>https://github.com/S-IT-GmbH/${project.artifactId}</url>
 
     <properties>
         <java.version>21</java.version>
