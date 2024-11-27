@@ -22,7 +22,7 @@ jobs:
         java-version: '21'
         distribution: 'temurin'
         server-id: central
-        gpg-private-key: ${{ secrets.MAVEN_CENTRAL_GPG_PRIVATE_KEY }}
+#        gpg-private-key: ${{ secrets.MAVEN_CENTRAL_GPG_PRIVATE_KEY }}
 
     - name: Output Settings.xml
       run: cat ~/.m2/settings.xml
