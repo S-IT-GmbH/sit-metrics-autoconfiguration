@@ -7,12 +7,12 @@ jobs:
   build:
     env:
       GPG_PASSPHRASE: ${{ secrets.MAVEN_CENTRAL_GPG_PASSPHRASE }}
+      GITHUB_ACTOR: ${{ secrets.MAVEN_CENTRAL_USERNAME }}
+      GITHUB_TOKEN: ${{ secrets.MAVEN_CENTRAL_TOKEN }}
 
     runs-on: ubuntu-latest
     permissions:
-      contents: write
-      issues: write
-      packages: write
+      contents: read
 
     steps:
     - uses: actions/checkout@v4
@@ -24,9 +24,9 @@ jobs:
         server-id: central
         gpg-private-key: ${{ secrets.MAVEN_CENTRAL_GPG_PRIVATE_KEY }}
 
+    - name: Output Settings.xml
+      run: cat ~/.m2/settings.xml
+
     - name: Build with Maven
       run: mvn -X clean deploy
-      env:
-        GITHUB_ACTOR: ${{ secrets.MAVEN_CENTRAL_USERNAME }}
-        GITHUB_TOKEN: ${{ secrets.MAVEN_CENTRAL_TOKEN }}
 
