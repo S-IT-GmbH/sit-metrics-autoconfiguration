@@ -7,6 +7,9 @@ jobs:
   build:
     env:
       GPG_PASSPHRASE: ${{ secrets.MAVEN_CENTRAL_GPG_PASSPHRASE }}
+      GITHUB_ACTOR: ${{ secrets.MAVEN_CENTRAL_USERNAME }}
+      GITHUB_TOKEN: ${{ secrets.MAVEN_CENTRAL_TOKEN }}
+
 
     runs-on: ubuntu-latest
     permissions:
@@ -21,8 +24,6 @@ jobs:
         java-version: '21'
         distribution: 'temurin'
         server-id: central
-        server-username: ${{ secrets.MAVEN_CENTRAL_USERNAME }}
-        server-password: ${{ secrets.MAVEN_CENTRAL_TOKEN }}
         gpg-private-key: ${{ secrets.MAVEN_CENTRAL_GPG_PRIVATE_KEY }}
 
     - name: Build with Maven
