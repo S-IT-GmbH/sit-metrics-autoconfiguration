@@ -1,4 +1,4 @@
-The MIT License (MIT)aaa
+The MIT License (MIT)
 
 Copyright (c) 2024 S-IT Application Engineering & Consulting GmbH
 
