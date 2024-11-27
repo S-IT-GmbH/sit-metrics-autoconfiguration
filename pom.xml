@@ -12,7 +12,7 @@
 
     <groupId>dev.sitconsulting</groupId>
     <artifactId>sit-metrics-autoconfiguration</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
 
     <organization>
         <name>S-IT Application Engineering &amp; Consulting GmbH</name>
