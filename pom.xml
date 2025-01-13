@@ -6,19 +6,19 @@
 
     <parent>
         <groupId>dev.sitconsulting</groupId>
-        <artifactId>sit-spring-base-bom</artifactId>
-        <version>0.0.3</version>
+        <artifactId>sit-library-bom</artifactId>
+        <version>0.0.1</version>
     </parent>
 
     <groupId>dev.sitconsulting</groupId>
     <artifactId>sit-metrics-autoconfiguration</artifactId>
-    <version>0.0.4</version>
+    <version>0.0.5</version>
 
     <organization>
         <name>S-IT Application Engineering &amp; Consulting GmbH</name>
         <url>https://s-it.consulting</url>
     </organization>
-    <inceptionYear>2024</inceptionYear>
+    <inceptionYear>2025</inceptionYear>
     <licenses>
         <license>
             <name>MIT</name>
