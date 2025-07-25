@@ -27,6 +27,7 @@
         </license>
     </licenses>
 
+    <name>sit-metrics-autoconfiguration</name>
     <description>S-IT Metrics Autoconfiguration</description>
     <url>https://github.com/S-IT-GmbH/${project.artifactId}</url>
 
