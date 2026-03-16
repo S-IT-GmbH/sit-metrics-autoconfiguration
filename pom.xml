@@ -12,7 +12,7 @@
 
     <groupId>dev.sitconsulting</groupId>
     <artifactId>sit-metrics-autoconfiguration</artifactId>
-    <version>1.1.1</version>
+    <version>1.2.0</version>
 
     <organization>
         <name>S-IT Application Engineering &amp; Consulting GmbH</name>
@@ -57,6 +57,11 @@
         <dependency>
             <groupId>io.micrometer</groupId>
             <artifactId>micrometer-registry-prometheus</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
 
         <dependency>
