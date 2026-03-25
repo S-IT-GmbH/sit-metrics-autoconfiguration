@@ -15,10 +15,14 @@ public class MetricsEnvironmentPostProcessor implements EnvironmentPostProcessor
     public void postProcessEnvironment(ConfigurableEnvironment environment, SpringApplication application) {
         Map<String, Object> defaultProperties = new HashMap<>();
         defaultProperties.put("management.metrics.export.prometheus.enabled", "true");
-        defaultProperties.put("management.security.enabled", "false");
         defaultProperties.put("management.server.ssl.enabled", "false");
         defaultProperties.put("management.endpoints.web.exposure.include",
                 "beans,caches,conditions,configprops,env,health,info,liquibase,mappings,prometheus");
+        defaultProperties.put("management.endpoints.enabled-by-default", "true");
+        defaultProperties.put("management.info.build.enabled", "false");
+
+        //Test:
+        defaultProperties.put("management.info.build.enabled", "false");
 
         MapPropertySource target = new MapPropertySource(PROPERTY_SOURCE_NAME, defaultProperties);
         environment.getPropertySources().addLast(target);
